@@ -15,19 +15,74 @@ const headerClickIntervalId = setInterval(() => {
     if (!header || !side) {
         return; // waiting for interval
     }
-setInterval(kosherfy, 7000);
+    setInterval(kosherfy, 200);
 
-function kosherfy(){
-    console.log("kosherfy");
-    const replacement = document.createElement('div');
-    replacement.innerHTML = '<div>Hii</div>'
-    //document.body.innerHTML = document.body.innerHTML.replace(/67f736e03050b4d0ed3779b0edbf88c7_w_2090-64/g, '67f736e03050b4d0ed3779b0edbf88c7_w_2471-64');
-    //console.log(document.querySelectorAll('_3R6rC'));
-    for (const el of document.body.getElementsByClassName('_3R6rC')) {
-        console.log("Here");
-        el.replaceWith(replacement.children);
-      }
-    
+    function kosherfy() {
+        console.log("kosherfy");
+        //replacements:
+        const brideAndGroom = document.createElement('div');
+        brideAndGroom.innerHTML = '<img crossorigin="anonymous" src="/img/67f736e03050b4d0ed3779b0edbf88c7_w_1603-40.png" alt="👰‍♀" draggable="false" class="_2UdhN _3zyju i0jNr selectable-text copyable-text" data-plain-text="👰‍♀" style="visibility: visible;"><img crossorigin="anonymous" src="/img/67f736e03050b4d0ed3779b0edbf88c7_w_2529-40.png" alt="🤵‍♂" draggable="false" class="_2UdhN _3zyju i0jNr selectable-text copyable-text" data-plain-text="🤵‍♂" style="visibility: visible;">'
+
+        const chicken = document.createElement('div');
+        chicken.innerHTML = '<img crossorigin="anonymous" src="/img/67f736e03050b4d0ed3779b0edbf88c7_w_855-64.png" alt="🐓" draggable="false" class="_2UdhN _1xeoG i0jNr selectable-text copyable-text" data-plain-text="🐓" style="visibility: visible;">'
+        
+        const willBeFine = document.createElement('div');
+        willBeFine.innerHTML = "<span class='new'>בעזרת ה' יהיה בסדר</span>"
+
+        const farApart = document.createElement('div');   
+        farApart.innerHTML = '<span><img crossorigin="anonymous" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="👩‍🦰" draggable="false" class="b51 emoji wa i0jNr selectable-text copyable-text" data-plain-text="👩‍🦰" style="background-position: -40px -40px;">&lt;-----------------------------------------------------&gt;<img crossorigin="anonymous" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="👱‍♂️" draggable="false" class="b64 emoji wa i0jNr selectable-text copyable-text" data-plain-text="👱‍♂️" style="background-position: 0px -80px;"></span>'
+        
+        const israelFlag = document.createElement('div');   
+        israelFlag.innerHTML = '<img crossorigin="anonymous" src="/img/67f736e03050b4d0ed3779b0edbf88c7_w_347-64.png" alt="🇮🇱" draggable="false" class="_2UdhN _1xeoG i0jNr selectable-text copyable-text" data-plain-text="🇮🇱" style="visibility: visible;">'
+
+        const cardia = document.createElement('div');   
+        cardia.innerHTML = '<img crossorigin="anonymous" src="/img/67f736e03050b4d0ed3779b0edbf88c7_w_3296-64.png" alt="🫀" draggable="false" class="_2UdhN _1xeoG i0jNr selectable-text copyable-text" data-plain-text="🫀" style="visibility: visible;">'
+        
+        for (const el of document.body.getElementsByTagName('img')) {
+            if (el.getAttribute('data-plain-text') == "😘") {
+                el.replaceWith(brideAndGroom)
+            }
+            if (el.getAttribute('data-plain-text') == "🐷") {
+                el.replaceWith(chicken)
+            }
+            if (el.getAttribute('data-plain-text') == "💩") {
+                el.replaceWith(willBeFine)
+            }
+            if (el.getAttribute('data-plain-text') == "🫂") {
+                el.replaceWith(farApart)
+            }
+            if (el.getAttribute('data-plain-text') == "🇵🇸") {
+                el.replaceWith(israelFlag)
+            }
+            if (el.getAttribute('data-plain-text') == "❤️" || el.className == '_2UdhN _1xeoG _1jJBG i0jNr') {
+                el.replaceWith(cardia)
+            }
+        }
+
+
+        
+        const exercise3 = document.createElement('div');
+        exercise3.innerHTML = '<span class="new">עשית את תרגיל 3 במסדי?</span>'
+
+        const shabatAdvent = document.createElement('div');
+        shabatAdvent.innerHTML = '<span class="new">עד כניסת שבת ישבתי על התרגיל הזה</span>'
+
+
+       
+        for (const el of document.body.getElementsByClassName('f804f6gw ln8gz9je')) {
+            if (el.innerHTML == "את נראית ממש יפה היום") {
+                el.replaceWith(exercise3)
+            }
+            if (el.innerHTML == "כל הסופש ישבתי על התרגיל הזה") {
+                el.replaceWith(shabatAdvent)
+            }
+           
+            
+
+        }
+
+    }
+
     //document.body.classList.add(OptionsClassNames.blurConversations)
     // const list = document.body.getElementsByClassName('_3R6rC');
     // console.log(list);
@@ -37,7 +92,7 @@ function kosherfy(){
     //     if (element.innerHTML.includes("<img crossorigin=\"anonymous\" src=\"/img/67f736e03050b4d0ed3779b0edbf88c7_w_2090-64.png")){
     //         element.innerHTML = "X";}
     // }
-}
+
 
 
 
