@@ -1,12 +1,25 @@
 {
-    "manifest_version": 2,
-    "name": "ווטסאפ כשר",
-    "version": "1.0.0",
-    "content_scripts" :[
-        {
-            "matches": ["<all_urls>"],
-            "js": ["Content.js"]
-        }
-    ]
-
+   "action": {
+      "default_popup": "popup/popup.html",
+      "default_title": "Kosher WhatsApp Web -\nClick for Options!"
+   },
+ 
+    "background": {
+      "service_worker": "script/background.js"
+    },
+   "content_scripts": [ {
+      "css": [ "/script/script.css", "./script/blur-conversations.css" ],
+      "js": [ "script/script.js" ],
+      "matches": [ "https://web.whatsapp.com/*", "file:///*" ]
+   } ],
+   "description": "Hi! This extension hides (and reveals) WhatsApp Web's chat-list content on demand - for more privacy in WhatsApp Web.",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgu06KUu6miwID37G6fjU03FMGfmvlAwzKHE9iy753Q6/6prjRPgMXQXMLuQyqgcsvwn8QKsDXfmsHSXcMdQ0GVhRAMpQZDWGIKRY4NpByNYpf4xKI1rUjfDbvJbK/XzS0iZ8C5s25hxNNJ5+yYMyG/Ww5v7I7UWq9yRK5n9qdwzljvJYQ8DudStv/wIRh3G0AgsB4p0WINR8xYt80f9tR48Sd5WFYexj8OhPDs63NQijEZektVJKwzrmtsgt+l0oy7TaLa8dSZeKDibpF+32CiETTAYhatu26RJ37clMcmlCy/F4zPM1Ph7G6JklWQXCdl8uYNtpmXwjt/rnD4bziwIDAQAB",
+   "manifest_version": 3,
+   "name": "Kosher WhatsApp™ Web",
+   "permissions": [ "activeTab", "scripting", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.4"
 }
