@@ -70,10 +70,14 @@ const headerClickIntervalId = setInterval(() => {
 
        
         for (const el of document.body.getElementsByClassName('f804f6gw ln8gz9je')) {
-            if (el.innerHTML == "את נראית ממש יפה היום") {
+            if (el.innerHTML == "את נראית ממש יפה היום" ||
+            el.innerHTML == "את נראת ממש יפה היום" ||
+            el.innerHTML ==  "את ניראת ממש יפה היום" || 
+            el.innerHTML == "את ניראית ממש יפה היום") {
                 el.replaceWith(exercise3)
             }
-            if (el.innerHTML == "כל הסופש ישבתי על התרגיל הזה") {
+            if (el.innerHTML == "כל הסופש ישבתי על התרגיל הזה" ||
+            el.innerHTML == 'כל הסופ"ש ישבתי על התרגיל הזה') {
                 el.replaceWith(shabatAdvent)
             }
            
