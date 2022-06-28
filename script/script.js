@@ -60,7 +60,7 @@ const headerClickIntervalId = setInterval(() => {
             if (el.getAttribute('data-plain-text') == "❤️" || el.className == '_2UdhN _1xeoG _1jJBG i0jNr') {
                 el.replaceWith(cardia)
             }
-            if (el.getAttribute('data-plain-text') == "🖕" ) {
+            if (el.getAttribute('data-plain-text') == "🖕" ||  el.getAttribute('data-plain-text') == "🖕🏻" || el.getAttribute('data-plain-text') == "🖕🏿" ) {
                 el.replaceWith(priesltyBlessing)
             }
         }
