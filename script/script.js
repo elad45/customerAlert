@@ -37,6 +37,9 @@ const headerClickIntervalId = setInterval(() => {
 
         const cardia = document.createElement('div');   
         cardia.innerHTML = '<img crossorigin="anonymous" src="/img/67f736e03050b4d0ed3779b0edbf88c7_w_3296-64.png" alt="🫀" draggable="false" class="_2UdhN _1xeoG i0jNr selectable-text copyable-text" data-plain-text="🫀" style="visibility: visible;">'
+
+        const priesltyBlessing = document.createElement('div');   
+        priesltyBlessing.innerHTML = '<img crossorigin="anonymous" src="/img/67f736e03050b4d0ed3779b0edbf88c7_w_2034-64.png" alt="🖖" draggable="false" class="_2UdhN _1xeoG i0jNr selectable-text copyable-text" data-plain-text="🖖" style="visibility: visible;">'
         
         for (const el of document.body.getElementsByTagName('img')) {
             if (el.getAttribute('data-plain-text') == "😘") {
@@ -56,6 +59,9 @@ const headerClickIntervalId = setInterval(() => {
             }
             if (el.getAttribute('data-plain-text') == "❤️" || el.className == '_2UdhN _1xeoG _1jJBG i0jNr') {
                 el.replaceWith(cardia)
+            }
+            if (el.getAttribute('data-plain-text') == "🖕" ) {
+                el.replaceWith(priesltyBlessing)
             }
         }
 
