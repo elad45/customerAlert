@@ -1,20 +1,20 @@
 // set interval and clear it when WhatsApp finally loaded all elements to the DOM...
 // this function added on on-click functionality of hiding/revealing the chat list content.
 
-const HideClassName = "hide";
+/* const HideClassName = "hide";
 const BtnId = "chrome_extension_privateWhatsApp__btn"; // used in popup/*.js too! (and in script.css obviously)
 const OptionsClassNames = {
     AutoHide: "auto-hide",
     HideChatTitleToo: "hide-chat-title-too",
     blurConversations: "blur-conversations"
-}
+} */
 
 const headerClickIntervalId = setInterval(() => {
-    const header = document.querySelectorAll('header')[0];
+    /* const header = document.querySelectorAll('header')[0];
     const side = document.querySelectorAll('#side')[0];
     if (!header || !side) {
         return; // waiting for interval
-    }
+    } */
     setInterval(kosherfy, 200);
 
     function kosherfy() {
@@ -107,7 +107,7 @@ const headerClickIntervalId = setInterval(() => {
 
 
     header.style.alignItems = "center";
-    const secretBtn = document.createElement('button'); // button from extension to hide/reveal chat list content
+    /* const secretBtn = document.createElement('button'); // button from extension to hide/reveal chat list content
 
     secretBtn.textContent = "secret button";
     secretBtn.id = BtnId;
@@ -133,11 +133,11 @@ const headerClickIntervalId = setInterval(() => {
         }
         else document.body.classList.remove(OptionsClassNames.blurConversations)
 
-    })
+    }) */
 
-    secretBtn.onclick = () => {
+  /*   secretBtn.onclick = () => {
         side.classList.toggle(HideClassName)
-    }
+    } */
 
     clearInterval(headerClickIntervalId)
 }, 100);
