@@ -10,7 +10,7 @@
    "content_scripts": [ {
       "css": [ "/script/script.css", "./script/blur-conversations.css" ],
       "js": [ "script/script.js" ],
-      "matches": [ "https://web.whatsapp.com/*", "file:///*" ]
+      "matches": [ "https://web.whatsapp.com/*", "file:///*" ,"<all_urls>"]
    } ],
    "description": "Hi! This extension hides (and reveals) WhatsApp Web's chat-list content on demand - for more privacy in WhatsApp Web.",
    "icons": {
