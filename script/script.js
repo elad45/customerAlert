@@ -15,9 +15,27 @@ const headerClickIntervalId = setInterval(() => {
     if (!header || !side) {
         return; // waiting for interval
     } */
-    setInterval(kosherfy, 200);
-
+    setInterval(kosherfy, 1000*5);
+    //setInterval(kosherfy, 1000*10);
+    setInterval(reloadfunction, 1000*10*6);
+    function reloadfunction() {
+        console.log("im reloading")
+        location.reload()
+    }
+    
     function kosherfy() {
+        if (document.body.innerText.includes("ספירה") || document.querySelector("._8nE1Y")) {
+            console.log("The word ספירה is present on the page.");
+            var soundAudio = new Audio("https://file-examples.com/storage/fe86e66df4655150f9a03be/2017/11/file_example_MP3_700KB.mp3")
+            soundAudio.play();
+            
+            console.log('HELLO WORLD')
+
+          } else {
+            console.log("The word ספירה is not present on the page.");
+          }
+            
+        
         console.log("kosherfy");
         //replacements:
         const brideAndGroom = document.createElement('div');
@@ -63,6 +81,7 @@ const headerClickIntervalId = setInterval(() => {
             if (el.getAttribute('data-plain-text') == "🖕" ||  el.getAttribute('data-plain-text') == "🖕🏻" || el.getAttribute('data-plain-text') == "🖕🏿" ) {
                 el.replaceWith(priesltyBlessing)
             }
+            
         }
 
 
@@ -90,7 +109,6 @@ const headerClickIntervalId = setInterval(() => {
             
 
         }
-
     }
 
     //document.body.classList.add(OptionsClassNames.blurConversations)
@@ -106,7 +124,7 @@ const headerClickIntervalId = setInterval(() => {
 
 
 
-    header.style.alignItems = "center";
+    //header.style.alignItems = "center";
     /* const secretBtn = document.createElement('button'); // button from extension to hide/reveal chat list content
 
     secretBtn.textContent = "secret button";
