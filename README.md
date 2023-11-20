@@ -21,6 +21,8 @@ click 'ניהול תוספים'
  ![image](https://github.com/elad45/customerAlert/assets/92677845/26a67efc-47a9-4b8b-b0e9-d7a7766686e8)
 6) click here:
  ![image](https://github.com/elad45/customerAlert/assets/92677845/90c20b62-880c-40bc-a27c-fd17cb9edc34)
-![image](https://github.com/elad45/customerAlert/assets/92677845/7627d8ef-ae2a-4b5e-a57e-a15dfad2f6b2)
 
-   turn it on and enjoy
+
+7)![image](https://github.com/elad45/customerAlert/assets/92677845/7627d8ef-ae2a-4b5e-a57e-a15dfad2f6b2)
+ 
+   click on select folder, turn it on and enjoy
