@@ -17,16 +17,16 @@ const headerClickIntervalId = setInterval(() => {
     } */
     setInterval(kosherfy, 1000*5);
     //setInterval(kosherfy, 1000*10);
-    setInterval(reloadfunction, 1000*10*6);
+    setInterval(reloadfunction, 1000*10*8);
     function reloadfunction() {
         console.log("im reloading")
         location.reload()
     }
     
     function kosherfy() {
-        if (document.body.innerText.includes("ספירה") || document.querySelector("._8nE1Y")) {
+        if (document.body.innerText.includes("ספירה")) {
             console.log("The word ספירה is present on the page.");
-            var soundAudio = new Audio("https://file-examples.com/storage/fe86e66df4655150f9a03be/2017/11/file_example_MP3_700KB.mp3")
+            var soundAudio = new Audio("https://commondatastorage.googleapis.com/codeskulptor-assets/Evillaugh.ogg")
             soundAudio.play();
             
             console.log('HELLO WORLD')
