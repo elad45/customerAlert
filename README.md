@@ -1,19 +1,21 @@
-1)Create a folder where the code will be.
+1)Create a Folder:
 
-2)At the folder do the following thing:
+Create a folder on your local machine where you want to store your project code.
+
+2)In the address bar, type cmd and press Enter. This opens the Command Prompt.
 
 ![image](https://github.com/elad45/customerAlert/assets/92677845/6b81815e-db52-41b7-9737-085e2f29363b)
 
-and click enter.
 
-3)the command line is now open. write there the following line
+3)In the Command Prompt, type the following command and press Enter:
+
 git clone https://github.com/elad45/customerAlert.git
 
-4) On chrome click on the following icon:
+4) Open the Google Chrome browser.
 
  ![image](https://github.com/elad45/customerAlert/assets/92677845/c5f106eb-8651-4901-a021-09a2b0e883ed)
 
-It's is on the left side of the url.
+It's on the left side of the url.
 
 click 'ניהול תוספים'
 
@@ -25,4 +27,4 @@ click 'ניהול תוספים'
 
 7)![image](https://github.com/elad45/customerAlert/assets/92677845/7627d8ef-ae2a-4b5e-a57e-a15dfad2f6b2)
  
-   click on select folder, turn it on and enjoy
+Click on "Select Folder," enable it, and enjoy.
