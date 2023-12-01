@@ -1,6 +1,6 @@
 1)Create a Folder:
 
-Create a folder on your local machine where you want to store your project code.
+Create a folder on your local machine where you want to store the project code.
 
 2)In the address bar, type cmd and press Enter. This opens the Command Prompt.
 
